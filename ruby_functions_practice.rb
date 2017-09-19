@@ -3,27 +3,27 @@ def return_10()
 end
 
 def add(a, b)
-  return 3
+  return  a + b
 end
 
 def subtract(a, b)
-  return 5
+  return a - b
 end
 
 def multiply(a, b)
-  return 8
+  return a * b
 end
 
 def divide(a, b)
-  return 5
+  return  a / b
 end
 
 def length_of_string(test_string)
-  return 21
+  return test_string.length
 end
 
 def join_string(string_1, string_2)
-  return "Mary had a little lamb, it's fleece was white as snow"
+  return string_1 + string_2
 end
 
 def add_string_as_number(a, b)
@@ -58,30 +58,18 @@ def number_to_full_month_name(month)
   end
 end
 
-def number_to_short_month_name(shortmonth)
-  if shortmonth == 1
-    return "Jan"
-  elsif shortmonth == 2
-    return "Feb"
-  elsif shortmonth == 3
-    return "Mar"
-  elsif shortmonth == 4
-    return "Apr"
-  elsif shortmonth == 5
-    return "May"
-  elsif shortmonth == 6
-    return "Jun"
-  elsif shortmonth == 7
-    return "Jul"
-  elsif shortmonth == 8
-    return "Aug"
-  elsif shortmonth == 9
-    return "Sep"
-  elsif shortmonth == 10
-    return "Oct"
-  elsif shortmonth == 11
-    return "Nov"
-  else shortmonth == 12
-    return "Dec"
-  end
+def number_to_short_month_name(num)
+   return number_to_full_month_name(num).slice(0..2)
+end
+
+def cube_volume(length)
+  return length ** 3
+end
+
+def sphere_volume(radius)
+  return (4.0/3.0) * Math::PI * (radius ** 3)
+end
+
+def fahrenheit_to_celsius(f)
+  return (f - 32) * (5.0/9)
 end
