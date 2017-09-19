@@ -74,13 +74,18 @@ def test_volume_of_cube
   assert_equal(125, cube_volume(length))
 end
 
-def rest_volume_of_sphere()
+def test_volume_of_sphere()
   radius = 5
   assert_equal(523.6, sphere_volume(radius).round(1))
 end
 
 def test_fahrenheit_to_celsius()
-  farenheit = 50
-  assert_equal(10,
-  fahrenheit_to_celsius.round(1))
+  fahrenheit = 50
+  assert_equal(10,fahrenheit_to_celsius(fahrenheit).round(1))
+end
+
+def test_square_root_of_number()
+  num = 16
+  assert_equal(4, square_of_number(num))
+end
 end

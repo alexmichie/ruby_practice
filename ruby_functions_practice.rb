@@ -73,3 +73,8 @@ end
 def fahrenheit_to_celsius(f)
   return (f - 32) * (5.0/9)
 end
+
+def square_of_number(num)
+  return Math.sqrt(num)
+
+end
